@@ -2,7 +2,7 @@
   <section class="container">
     <h1>GitHub Users</h1>
     <img :src="`https://github.com/${user.login}.png`" :alt="`${user.name}'s icon image`" width="300" height="300">
-    <h2>{{user.name}}</h2>
+    <h2><a :href="`https://github.com/${user.login}`">{{user.name}}</a></h2>
     <table>
       <tbody>
         <tr v-for="(value, key) in user" :key="key">
