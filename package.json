@@ -9,6 +9,7 @@
   "author": "hrfmmymt",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
     "nuxt": "^1.4.2"
   },
   "devDependencies": {
