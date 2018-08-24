@@ -54,8 +54,6 @@ export default {
 
 .container img {
   margin-bottom: 2%;
-  border-radius: 50%;
-  overflow: hidden;
 }
 
 .container table {
