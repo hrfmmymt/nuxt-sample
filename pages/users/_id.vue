@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <h1>GitHub Users</h1>
-    <img :src="`https://github.com/${user.login}.png`" :alt="`${user.name} icon image`" width="300" height="300">
+    <img :src="`https://github.com/${user.login}.png`" :alt="`${user.name}'s icon image`" width="300" height="300">
     <h2>{{user.name}}</h2>
     <table>
       <tbody>
@@ -30,12 +30,12 @@ export default {
 
   head () {
     return {
-      title: this.user.name,
+      title: `${this.user.name} | GitHub Users`,
       meta: [
         {
           hid: 'description',
           name: this.user.name,
-          content: 'My custom description'
+          content: `${this.user.name} | GitHub Users`
         }
       ]
     }
