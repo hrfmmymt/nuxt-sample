@@ -7,13 +7,14 @@
       <tbody>
         <tr v-for="(value, key) in user" :key="key">
           <th>{{key}}</th>
-          <td>{{value}}</td>
+          <td v-if="value">{{value}}</td>
+          <td v-else>-</td>
         </tr>
       </tbody>
     </table>
   </section>
 </template>
- 
+
 <script>
 import axios from 'axios'
 
@@ -41,7 +42,7 @@ export default {
   }
 }
 </script>
- 
+
 <style>
 .container {
   display: flex;
